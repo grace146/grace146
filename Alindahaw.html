@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alindahaw Beach Resort</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e8f8f5;
+      margin: 0;
+      padding: 0;
+      color: #2e3d49;
+      line-height: 1.6;
+    }
+    header {
+      background: #a8e6cf;
+      color: #064e3b;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 5px solid #ffe0b2;
+    }
+    section {
+      padding: 20px;
+      background: #ffffff;
+      margin: 15px;
+      border-left: 8px solid #a8dadc;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      text-align: justify;
+    }
+    h2 {
+      color: #008080;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #dcedc8;
+      color: #3e4e2f;
+      font-size: 14px;
+      margin-top: 20px;
+      border-top: 4px solid #ffe082;
+    }
+    .gallery {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      border-radius: 10px;
+    }
+    .gallery img.active {
+      opacity: 1;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Alindahaw Beach Resort</h1>
+    <p>Tukuran, Zamboanga del Sur</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>Alindahaw Beach Resort in Tukuran, Zamboanga del Sur is a hidden coastal gem perfect for a relaxing escape. Just a short drive from Pagadian City, it offers serene beaches, calm waters, and a laid-back vibe—ideal for unwinding and making memories by the shore.</p>
+  </section>
+
+  <section>
+    <h2>Entrance and Cottage Rates</h2>
+    <p><strong>Entrance Fee:</strong> No entrance fee</p>
+    <p><strong>Cottages:</strong></p>
+    <ul>
+      <li>₱300 for up to 10 persons</li>
+      <li>₱500 for up to 20 persons</li>
+    </ul>
+    <p><strong>Additional Fees:</strong> No extra or hidden fees</p>
+  </section>
+
+  <section>
+    <h2>Operating Hours</h2>
+    <p>Open: 6:00 AM<br>Close: 10:00 PM</p>
+  </section>
+
+  <section>
+    <h2>Facilities and Amenities</h2>
+    <ul>
+      <li>Restrooms</li>
+      <li>Parking area</li>
+      <li>Grilling/kitchen area</li>
+      <li>Piso WiFi Vendo Machine</li>
+      <li>Trash bins</li>
+      <li>Salbabida</li>
+      <li>Overnight stays (Note: Swimming is not allowed at night)</li>
+      <li>5 available rooms for overnight stay</li>
+      <li>Mini store for snacks, drinks, and essentials</li>
+      <li>Videoke machine</li>
+      <li>Designated event area</li>
+      <li>Small beachfront security hut</li>
+      <li>GCash cash-in and cash-out</li>
+      <li>Air-conditioned rooms</li>
+      <li>Emergency hotline tarpaulins</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Overnight Stay Policy</h2>
+    <p>Overnight stay is allowed, but swimming during night time is strictly prohibited.</p>
+  </section>
+
+  <section>
+    <h2>Rules and Safety</h2>
+    <p><strong>Specific Rule:</strong> No swimming at night</p>
+    <p><strong>Safety Personnel:</strong> Lifeguard and security personnel on duty</p>
+    <p><strong>Additional Rules:</strong> Pets allowed, no dress code required</p>
+  </section>
+
+  <section>
+    <h2>Visitor Information</h2>
+    <p><strong>Most Common Visitors:</strong> Local residents, especially from Zamboanga del Sur</p>
+    <p><strong>Most Active Months:</strong> November to January</p>
+  </section>
+
+  <section>
+    <h2>Feedback & Promotions</h2>
+    <p><strong>Group Packages:</strong> 20% discount for senior citizens and persons with disabilities</p>
+    <p><strong>Online Promotion:</strong> Not promoted online</p>
+  </section>
+
+  <section>
+    <h2>Contact Information</h2>
+    <p>Phone: 0917 969 2971</p>
+  </section>
+
+  <section>
+    <h2>Resort's Gallery</h2>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <footer>
+    <p>Prepared by: Mary Grace Tabañag, Ruby Jean Espinosa, Mark Madelo</p>
+  </footer>
+
+<script>
+  const images = [
+    "https://files.catbox.moe/rnfnxq",
+    "https://files.catbox.moe/az9izl",
+    "https://files.catbox.moe/dduqb8",
+    "https://files.catbox.moe/b027ne",
+    "https://files.catbox.moe/9bd4bi",
+    "https://files.catbox.moe/q1s8ew",
+    "https://files.catbox.moe/ydd68w",
+    "https://files.catbox.moe/6w6k78",
+    "https://files.catbox.moe/jtpd6e",
+    "https://files.catbox.moe/9knhm5",
+    "https://files.catbox.moe/o9l4r1",
+    "https://files.catbox.moe/mh1jyf",
+    "https://files.catbox.moe/654vmo",
+    "https://files.catbox.moe/rj8wgb",
+  ];
+
+  const gallery = document.getElementById('gallery');
+  let current = 0;
+
+  images.forEach((src, i) => {
+    const img = document.createElement('img');
+    img.src = src;
+    if (i === 0) img.classList.add('active');
+    gallery.appendChild(img);
+  });
+
+  const imgs = gallery.querySelectorAll('img');
+
+  function showNext() {
+    imgs[current].classList.remove('active');
+    current = (current + 1) % imgs.length;
+    imgs[current].classList.add('active');
+  }
+
+  setInterval(showNext, 3000);
+</script>
+
+</body>
+</html>
